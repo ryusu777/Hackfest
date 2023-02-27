@@ -5,7 +5,7 @@ import { StartupPageComponent } from 'src/pages/startup/startup.component';
 
 const routes: Routes = [
   { path: '', component: ComponentPageComponent },
-  { path: 'startup', component: StartupPageComponent }
+  { path: 'startup', component: StartupPageComponent },
 ];
 
 @NgModule({
