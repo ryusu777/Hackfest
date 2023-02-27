@@ -1,0 +1,11 @@
+<div [class]="'alert shadow-lg text-white font-semibold ' + alertType[type]">
+    <div>
+        <img [src]="'assets/alert/' + type + '.svg'" class="stroke-current flex-shrink-0 h-6 w-6"/>
+        <span class="text-black">
+            <ng-content></ng-content>
+        </span>
+    </div>
+    <div class="flex-none">
+        <ng-content select="[action]"></ng-content>
+    </div>
+</div>

@@ -1,0 +1,322 @@
+<div class="px-[80px] py-[100px]">
+    <!-- Alert -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Alert</h1>
+
+    <!-- Alert Basic -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">alert-basic</h2>
+    <alert>Info alert</alert>
+
+    <br>
+
+    <!-- Alert Success -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">alert-success</h2>
+    <alert type="success">
+        Success alert
+        <div action>
+            <btn type="primary" sm class="mr-2">Accept</btn>
+            <btn type="accent" sm>Deny</btn>
+        </div>
+    </alert>
+
+    <br>
+
+    <!-- Alert Warning -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">alert-warning</h2>
+    <alert type="warning">Warning alert</alert>
+    <br>
+
+    <!-- Alert Error -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">alert-error</h2>
+    <alert type="error">Error alert</alert>
+
+    <br>
+
+    <!-- End Alert -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Avatar -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Avatar</h1>
+
+    <!-- Avatar Basic -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">Avatar Basic</h2>
+    <avatar w-32 src="assets/Gambar-Avatar.jpg">
+
+    </avatar>
+
+    <!-- Avatar Rounded -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">Avatar Rounded</h2>
+    <avatar w-32 round src="assets/Gambar-Avatar.jpg">
+
+    </avatar>
+    <!-- End Avatar -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Button -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Buttons</h1>
+    <div class="flex gap-x-3">
+        <btn type="primary">Primary button</btn>
+        <btn type="secondary">Secondary button</btn>
+        <btn type="accent">Accent button</btn>
+        <btn type="info">Info button</btn>
+    </div>
+    <!-- End Button -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Card -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Card</h1>
+    <div class="flex gap-x-3">
+
+        <card type="basic">
+            <div action>
+                <btn type="basic">Buy Now</btn>
+            </div>
+        </card>
+
+        <card type="primary">
+            <div action>
+                <btn type="basic">Buy Now</btn>
+            </div>
+        </card>
+
+        <card type="basic" position="all-center">
+            <div action>
+                <btn type="basic">Accept</btn>
+                <btn type="basic">Denny</btn>
+            </div>
+        </card>
+
+    </div>
+    <!-- End Card -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Stat -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Stat</h1>
+    <stat></stat>
+    <!-- End Stat -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Table -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Table</h1>
+    <div>
+        <custom-table type="compact"></custom-table>
+        <br>
+        <custom-table type="zebra"></custom-table>
+        <br>
+        <custom-table type="comzeb"></custom-table>
+    </div>
+    <!-- End Table -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Tooltip -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Tooltip</h1>
+    <div class="flex gap-x-3">
+        <tooltip position="top"></tooltip>
+        <tooltip position="right"></tooltip>
+        <tooltip position="bottom"></tooltip>
+        <tooltip position="left"></tooltip>
+    </div>
+    <!-- End Tooltip -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Checkbox -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Checkbox</h1>
+    <div class="flex gap-x-3">
+
+        <checkbox size="xs"></checkbox>
+        <checkbox size="sm"></checkbox>
+        <checkbox size="md"></checkbox>
+        <checkbox size="lg"></checkbox>
+
+    </div>
+
+    <div class="flex gap-x-3">
+
+        <checkbox size="xs">
+            <div action>
+                <span class="label-text mr-5">Remember me</span>
+            </div>
+        </checkbox>
+        <checkbox size="sm">
+            <div action>
+                <span class="label-text mr-5">Remember me</span>
+            </div>
+        </checkbox>
+        <checkbox size="md">
+            <div action>
+                <span class="label-text mr-5">Remember me</span>
+            </div>
+        </checkbox>
+        <checkbox size="lg">
+            <div action>
+                <span class="label-text mr-5">Remember me</span>
+            </div>
+        </checkbox>
+
+    </div>
+    <!-- End Checkbox -->
+
+    <br>
+    <br>
+    <br>
+    
+    <!-- Input -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Text Input</h1>
+    <input-text [(value)]="inputValue"></input-text>
+    <!-- End Input -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- File Input -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">File Input</h1>
+    <file-inp></file-inp>
+    <!-- End File Input -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Radio -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Radio</h1>
+    <div class="w-[350px]">
+        <radio-el></radio-el>
+        <radio-el>
+            <div select="lab-radio">
+                <span class="label-text">Red pill</span> 
+            </div>
+        </radio-el>
+    </div>
+    <!-- End Radio -->
+    
+    <br>
+    <br>
+    <br>
+
+    <!-- Select -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Select</h1>
+    <select-el>
+        <option select="op-list" disabled selected>Who shot first?</option>
+        <option select="op-list">Dog</option>
+    </select-el>
+    <!-- End Select -->
+    
+    <br>
+    <br>
+    <br>
+
+    <!-- Textarea -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Textarea</h1>
+    <text-area></text-area>
+    <!-- End Textarea -->
+    
+    <br>
+    <br>
+    <br>
+
+    <!-- Toggle -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Toggle</h1>
+    <div class="w-[350px]">
+        <toggle></toggle>
+        <toggle>
+            <span class="label-text">Remember me</span> 
+        </toggle>
+    </div>
+    <!-- End Toggle -->
+
+    <!-- Drawer -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Drawer</h1>
+    <drawer></drawer>
+    <!-- End Drawer -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Toast -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Toast</h1>
+
+    <!-- toast-end toast-bottom -->
+    <h2 class="text-white/70 font-semibold font-sans text-lg mb-2">toast-end toast-bottom</h2>
+    <toast type="end" type="bottom">
+    </toast>
+
+    <!-- End Toast -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Breadcrumbs -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Breadcrumbs</h1>
+    <breadcrumbs>
+    </breadcrumbs>
+    <!-- End Breadcrumbs -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Bottom Navigation -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Bottom Navigation</h1>
+
+    <!-- End Bottom Navigation -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Menu -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Menu</h1>
+    <menu>
+
+    </menu>
+    <!-- End Menu -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Navbar -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Navbar</h1>
+    <navbar>
+
+    </navbar>
+    <!-- End Navbar -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Pagination -->
+    <h1 class="text-white font-bold font-sans text-xl mb-10">Pagination</h1>
+    <pagination>
+    </pagination>
+    <!-- End Pagination -->
+    
+    <br>
+    <br>
+    <br>
+
+</div>
