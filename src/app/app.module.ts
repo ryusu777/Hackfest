@@ -25,6 +25,11 @@ import { SelectComponent } from 'src/components/inputs/select/select.component';
 import { TextareaComponent } from 'src/components/inputs/text-area/textarea.component';
 import { ToggleComponent } from 'src/components/inputs/toggle/toggle.component';
 import { ComponentPageComponent } from 'src/pages/component/component.component';
+import { StartupPageComponent } from 'src/pages/startup/startup.component';
+import { OnBoardingPageComponent } from 'src/pages/onboarding/onboarding.component';
+import { SetPassPageComponent } from 'src/pages/onboarding/setpass.component';
+import { LoginPageComponent } from 'src/pages/loginscreen/loginscreen.component';
+import { ProfilePageComponent } from 'src/pages/profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +54,12 @@ import { ComponentPageComponent } from 'src/pages/component/component.component'
     SelectComponent,
     TextareaComponent,
     ToggleComponent,
-    ComponentPageComponent
+    ComponentPageComponent,
+    StartupPageComponent,
+    OnBoardingPageComponent,
+    SetPassPageComponent,
+    LoginPageComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
