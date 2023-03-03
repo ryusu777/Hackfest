@@ -30,6 +30,7 @@ import { OnBoardingPageComponent } from 'src/pages/onboarding/onboarding.compone
 import { SetPassPageComponent } from 'src/pages/onboarding/setpass.component';
 import { LoginPageComponent } from 'src/pages/loginscreen/loginscreen.component';
 import { ProfilePageComponent } from 'src/pages/profile/profile.component';
+import { EditProfilePageComponent } from 'src/pages/profile/editprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +60,8 @@ import { ProfilePageComponent } from 'src/pages/profile/profile.component';
     OnBoardingPageComponent,
     SetPassPageComponent,
     LoginPageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    EditProfilePageComponent
   ],
   imports: [
     BrowserModule,
