@@ -8,6 +8,7 @@ import { Component, Input } from "@angular/core";
 export class LongCardComponent {
     @Input() type: 'basic' | 'primary' | 'compact' = 'compact';
     @Input() position: 'all-center' | 'basic' = 'basic';
+    @Input() src!: string;
 
     cardType = {
         'basic': '',

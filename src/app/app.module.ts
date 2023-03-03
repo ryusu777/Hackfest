@@ -35,6 +35,8 @@ import { LongCardComponent } from 'src/components/longcard/longcard.component';
 import { ArticlePageComponent } from 'src/pages/article/article.component';
 import { AuthService } from 'src/services/auth-service';
 import { EditProfilePageComponent } from 'src/pages/profile/editprofile.component';
+import { DashboardPageComponent } from 'src/pages/dashboard/dashboard.component';
+import { MedicDetailPageComponent } from 'src/pages/medic-history/medicdetail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +70,9 @@ import { EditProfilePageComponent } from 'src/pages/profile/editprofile.componen
     ProfilePageComponent,
     MedicHistoryPageComponent,
     ArticlePageComponent,
-    EditProfilePageComponent
+    EditProfilePageComponent,
+    DashboardPageComponent,
+    MedicDetailPageComponent
   ],
   imports: [
     BrowserModule,
