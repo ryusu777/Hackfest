@@ -3,18 +3,16 @@
     <h1 class="text-[24px] text-skyBlue font-semibold">Account</h1>
   </div>
   <br>
-  <div class="flex flex-row justify-between">
-    <div class="flex flex-row">
-      <avatar round class="w-24 mx-auto" src="../../assets/Gambar-Avatar.jpg"></avatar>
-      <div class="flex flex-col justify-evenly">
+  <div class="flex gap-x-5">
+    <avatar round class="w-24" src="../../assets/Gambar-Avatar.jpg"></avatar>
+    <div class="flex flex-col justify-evenly flex-1">
+      <div class="w-full flex justify-between">
         <label class="text-black font-semibold text-[20px]">WindahGod</label>
-        <label class="text-black font-normal text-[12px]">+6287344651</label>
-        <label class="text-black font-normal text-[12px]">WindahGod@gmail.com</label>
+        <img src="../../assets/pencil-profile.svg" routerLink="/editprofile" />
       </div>
+      <label class="text-black font-normal text-[12px]">+6287344651</label>
+      <label class="text-black font-normal text-[12px]">WindahGod@gmail.com</label>
     </div>
-    <div class="w-full">
-      <img src="../../assets/pencil-profile.svg" alt="" srcset="" class="mx-auto">
-      </div>
   </div>
   <div class="flex flex-col space-y-[10px] mt-3">
     <h2 class="text-black text-[17px] font-semibold">Qr Code</h2>
@@ -69,7 +67,7 @@
     <div class="flex flex-row justify-start">
       <div class="flex flex-row">
         <img src="../../assets/logout.svg" alt="" class="w-7 mr-3">
-        <label class="text-skyBlue text-[17px] font-semibold">Log out</label>
+        <label class="text-skyBlue text-[17px] font-semibold" routerLink="/logout">Log out</label>
       </div>
     </div>
 </div>

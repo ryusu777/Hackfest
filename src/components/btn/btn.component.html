@@ -2,7 +2,7 @@
     [class]="'btn ' + btnType[type]"
     [class.glass]="glassy !== undefined"
     [class.btn-sm]="sm !== undefined"
-    class="w-full"
+    [class.w-full]="full !== undefined"
 >
     <ng-content></ng-content>
 </button>

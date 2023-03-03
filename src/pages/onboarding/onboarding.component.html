@@ -1,39 +1,66 @@
-<div class="bg-skyBlue min-h-screen flex items-center w-full">
+<div class="bg-skyBlue min-h-screen flex items-center w-full" *ngIf="pageNum === 1">
     <div class="w-full max-w-2xl mx-auto text-center px-[20px]">
+        <h1 class="text-[24px] text-left text-white font-semibold mb-5">Register</h1>
         <div class="w-full mb-[20px]">
             <ul class="flex flex-col space-y-2">
                 <li>
                     <h1 class="text-left text-lg text-white font-semibold">First Name</h1>
-                    <input-text></input-text>
+                    <input-text [(value)]="model.firstName"></input-text>
                 </li>
                 <li>
                     <h1 class="text-left text-lg text-white font-semibold">Last Name</h1>
-                    <input-text></input-text>
+                    <input-text [(value)]="model.lastName"></input-text>
                 </li>
                 <li>
                     <h1 class="text-left text-lg text-white font-semibold">Birthday</h1>
-                    <input-text></input-text>
+                    <input-text [(value)]="model.birthDate"></input-text>
                 </li>
                 <li>
                     <h1 class="text-left text-lg text-white font-semibold">NIK</h1>
-                    <input-text></input-text>
+                    <input-text [(value)]="model.nik"></input-text>
                 </li>
                 <li>
                     <h1 class="text-left text-lg text-white font-semibold">Phone</h1>
-                    <input-text></input-text>
+                    <input-text [(value)]="model.phone"></input-text>
                 </li>
                 <li>
                     <h1 class="text-left text-lg text-white font-semibold">Email</h1>
-                    <input-text></input-text>
+                    <input-text [(value)]="model.email"></input-text>
                 </li>
             </ul>
         </div>
-        <div class="flex flex-col space-y-[10px]">
-            <btn class="" routerLink="/setpass">Next</btn>
+        <div class="flex justify-center items-center gap-x-2">
+            <btn class="flex-1" full (click)="back()">Back</btn>
+            <btn class="flex-1" full (click)="next()">Next</btn>
         </div>
         
     <br>
     <br>
     <br>
+    </div>
+</div>
+
+<div class="bg-skyBlue min-h-screen flex items-center w-full" *ngIf="pageNum === 2">
+    <div class="w-full max-w-2xl mx-auto text-center px-[20px]">
+        <h1 class="text-[24px] text-left text-white font-semibold mb-5">Create Password</h1>
+        <div class="w-full mb-[20px]">
+            <ul class="flex flex-col space-y-2">
+                <li>
+                    <h1 class="text-left text-lg text-white font-semibold">Create Password</h1>
+                    <input-text></input-text>
+                </li>
+                <li>
+                    <h1 class="text-left text-lg text-white font-semibold">Confirm Password</h1>
+                    <input-text></input-text>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-center items-center gap-x-2">
+            <btn class="flex-1" full (click)="prev()">Prev</btn>
+            <btn class="flex-1" full (click)="submit()">Sign Up</btn>
+        </div>
+        <br>
+        <br>
+        <br>
     </div>
 </div>

@@ -1,35 +1,38 @@
-<div class="bg-white min-h-screen flex flex-col w-full max-w-2xl mx-auto px-[20px]">
+<div class="min-h-screen flex flex-col w-full max-w-2xl mx-auto px-[20px] pt-5">
   <div>
     <div class="flex flex-row justify-between">
       <div>
         <h1 class="text-[17px] text-black font-semibold">Welcome !</h1>
         <h1 class="text-[24px] text-black font-bold">WindahGod</h1>
       </div>
-      <avatar round class="w-[48px]" src="../../assets/Gambar-Avatar.jpg"></avatar>
+      <avatar round class="w-[64px]" src="/assets/Gambar-Avatar.jpg" routerLink="/profile"></avatar>
     </div>
   </div>
   <br>
   <div class="flex flex-row justify-between">
       <stat></stat>
-      <img src="../../assets/history-icon.svg" alt="">
+      <img src="../../assets/history-icon.svg" alt="" routerLink="/medhis">
   </div>
   <br>
   <div class="flex flex-row justify-between">
     <h2 class="text-[17px] text-black font-semibold space-y-5">HeaLink Articles</h2>
-    <label class="text-[14px] text-skyBlue font-normal space-y-5">See All</label>
+    <a routerLink="/article" class="text-[14px] text-skyBlue font-normal space-y-5">See All</a>
   </div>
   <div class="flex flex-col space-y-5">
-    <card>
+    <card routerLink="/article-detail">
         <span title>Top Indonesian Hospital in 2023 By
             Latest Survey</span>
         <span desc>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span>
         <span time>12</span>
     </card>
-    <card>
+    <card routerLink="/article-detail">
         <span title>Top Indonesian Hospital in 2023 By
             Latest Survey</span>
         <span desc>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span>
         <span time>12</span>
     </card>
   </div>
+    <br>
+    <br>
+    <br>
 </div>

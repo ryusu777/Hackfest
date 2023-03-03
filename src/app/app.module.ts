@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BtnComponent } from 'src/components/btn/btn.component';
@@ -27,7 +27,6 @@ import { ToggleComponent } from 'src/components/inputs/toggle/toggle.component';
 import { ComponentPageComponent } from 'src/pages/component/component.component';
 import { StartupPageComponent } from 'src/pages/startup/startup.component';
 import { OnBoardingPageComponent } from 'src/pages/onboarding/onboarding.component';
-import { SetPassPageComponent } from 'src/pages/onboarding/setpass.component';
 import { LoginPageComponent } from 'src/pages/loginscreen/loginscreen.component';
 import { ProfilePageComponent } from 'src/pages/profile/profile.component';
 import { MedicHistoryPageComponent } from 'src/pages/medic-history/medichistory.component';
@@ -37,6 +36,9 @@ import { AuthService } from 'src/services/auth-service';
 import { EditProfilePageComponent } from 'src/pages/profile/editprofile.component';
 import { DashboardPageComponent } from 'src/pages/dashboard/dashboard.component';
 import { MedicDetailPageComponent } from 'src/pages/medic-history/medicdetail.component';
+import { LogoutPageComponent } from 'src/pages/logout/logout.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { ArticleDetailPageComponent } from 'src/pages/article-detail/article-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,18 +67,26 @@ import { MedicDetailPageComponent } from 'src/pages/medic-history/medicdetail.co
     ComponentPageComponent,
     StartupPageComponent,
     OnBoardingPageComponent,
-    SetPassPageComponent,
     LoginPageComponent,
     ProfilePageComponent,
     MedicHistoryPageComponent,
     ArticlePageComponent,
     EditProfilePageComponent,
     DashboardPageComponent,
-    MedicDetailPageComponent
+    MedicDetailPageComponent,
+    LogoutPageComponent,
+    ArticleDetailPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

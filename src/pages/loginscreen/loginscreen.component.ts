@@ -15,6 +15,6 @@ export class LoginPageComponent
 
     login() {
         this.authService.login(this.nik, this.password);
-        this.router.navigate(['profile']);
+        this.router.navigate(['dashboard']);
     }
 }
