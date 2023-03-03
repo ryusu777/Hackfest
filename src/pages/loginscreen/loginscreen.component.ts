@@ -7,17 +7,14 @@ import { AuthService } from "src/services/auth-service";
     templateUrl: './loginscreen.component.html'
 })
 
-export class LoginPageComponent { 
+export class LoginPageComponent
+{ 
     constructor(private authService: AuthService, private router: Router) { }
-    username = "";
-    password = "";
+    nik: string = "";
+    password: string = "";
 
     login() {
-        if (!this.username.length || !this.password.length) {
-            return;
-        }
-
-        this.authService.login(this.username, this.password);
-        this.router.navigate([''])
+        this.authService.login(this.nik, this.password);
+        this.router.navigate(['profile']);
     }
 }

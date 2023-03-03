@@ -9,7 +9,6 @@ export class BtnComponent {
     @Input() type: 'primary' | 'secondary' | 'accent' | 'basic' | 'info' = 'basic';
     @Input() glassy?: '';
     @Input() sm?: '';
-    @Input() full?: '';
 
     btnType = {
         'primary': 'btn-primary',

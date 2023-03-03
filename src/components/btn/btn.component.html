@@ -1,8 +1,8 @@
-<button
+<button 
     [class]="'btn ' + btnType[type]"
     [class.glass]="glassy !== undefined"
     [class.btn-sm]="sm !== undefined"
-    [class.w-full]="full !== undefined"
+    class="w-full"
 >
     <ng-content></ng-content>
 </button>

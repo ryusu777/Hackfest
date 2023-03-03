@@ -30,8 +30,11 @@ import { OnBoardingPageComponent } from 'src/pages/onboarding/onboarding.compone
 import { SetPassPageComponent } from 'src/pages/onboarding/setpass.component';
 import { LoginPageComponent } from 'src/pages/loginscreen/loginscreen.component';
 import { ProfilePageComponent } from 'src/pages/profile/profile.component';
-import { EditProfilePageComponent } from 'src/pages/profile/editprofile.component';
+import { MedicHistoryPageComponent } from 'src/pages/medic-history/medichistory.component';
+import { LongCardComponent } from 'src/components/longcard/longcard.component';
+import { ArticlePageComponent } from 'src/pages/article/article.component';
 import { AuthService } from 'src/services/auth-service';
+import { EditProfilePageComponent } from 'src/pages/profile/editprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,12 +59,15 @@ import { AuthService } from 'src/services/auth-service';
     SelectComponent,
     TextareaComponent,
     ToggleComponent,
+    LongCardComponent,
     ComponentPageComponent,
     StartupPageComponent,
     OnBoardingPageComponent,
     SetPassPageComponent,
     LoginPageComponent,
     ProfilePageComponent,
+    MedicHistoryPageComponent,
+    ArticlePageComponent,
     EditProfilePageComponent
   ],
   imports: [

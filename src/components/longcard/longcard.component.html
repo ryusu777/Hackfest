@@ -1,0 +1,31 @@
+<!-- <div [class]="'card w-96 bg-base-100 shadow-xl' + ' ' + cardType[type]">
+    <div [class]="'card-body' + ' ' + positionType[position]">
+      <h2 class="card-title">Card title!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions justify-end">
+        <ng-content select="[action]"></ng-content>
+      </div>
+    </div>
+  </div>
+   -->
+
+<a href="#" class="inline-block w-full">
+  <div class="border-2 bg-white p-3 rounded-[28px] hover:shadow-md transition-all">
+    <div class="flex space-x-4 items-center">
+      <img src="../../assets/long-card/treatment.svg" alt="">
+      <div class="flex w-full justify-between items-center">
+        <div class="font-sans">
+          <h1 class="text-xl font-semibold text-black">
+            <ng-content select="[title]"></ng-content>
+          </h1>
+          <h2 class="text-black/80">
+            <ng-content select="[files]"></ng-content>
+            Files</h2>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-skyBlue">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>          
+      </div>
+    </div>
+ </div>
+</a>

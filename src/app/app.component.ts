@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { AuthService } from 'src/services/auth-service';
 
@@ -8,7 +8,7 @@ import { AuthService } from 'src/services/auth-service';
     styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
     constructor(public authService: AuthService) { }
     title = 'HeaLink';
 
