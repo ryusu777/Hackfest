@@ -9,8 +9,7 @@ import { ProfilePageComponent } from 'src/pages/profile/profile.component';
 import { StartupPageComponent } from 'src/pages/startup/startup.component';
 
 const routes: Routes = [
-  { path: '', component: ComponentPageComponent },
-  { path: 'startup', component: StartupPageComponent },
+  { path: '', component: StartupPageComponent },
   { path: 'onboarding', component: OnBoardingPageComponent },
   { path: 'setpass', component: SetPassPageComponent },
   { path: 'login', component: LoginPageComponent },

@@ -31,6 +31,7 @@ import { SetPassPageComponent } from 'src/pages/onboarding/setpass.component';
 import { LoginPageComponent } from 'src/pages/loginscreen/loginscreen.component';
 import { ProfilePageComponent } from 'src/pages/profile/profile.component';
 import { EditProfilePageComponent } from 'src/pages/profile/editprofile.component';
+import { AuthService } from 'src/services/auth-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +68,7 @@ import { EditProfilePageComponent } from 'src/pages/profile/editprofile.componen
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
