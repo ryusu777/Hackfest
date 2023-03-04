@@ -1,5 +1,7 @@
 <div [class]="'card bg-white border text-black shadow-xl' + ' ' + cardType[type]">
-  <figure class="max-h-64" ><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"/></figure>
+  <figure class="h-44" *ngIf="img !== undefined">
+    <img [src]="img" class="object-cover" alt="Shoes"/>
+  </figure>
   <div [class]="'card-body px-8 py-4' + ' ' + positionType[position]">
     <h2 class="card-title text-xl font-bold"><ng-content select="[title]"></ng-content></h2>
     <p class="text-lg font-semibold"><ng-content select="[desc]"></ng-content></p>

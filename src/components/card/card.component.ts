@@ -8,6 +8,7 @@ import { Component, Input } from "@angular/core";
 export class CardComponent {
     @Input() type: 'basic' | 'primary' | 'compact' = 'compact';
     @Input() position: 'all-center' | 'basic' = 'basic';
+    @Input() img?: string;
 
     cardType = {
         'basic': '',

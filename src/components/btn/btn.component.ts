@@ -13,9 +13,9 @@ export class BtnComponent {
 
     btnType = {
         'primary': 'btn-primary',
-        'secondary': 'btn-secondary',
+        'secondary': 'bg-skyBlue text-white border-2 border-white hover:bg-white hover:text-skyBlue hover:border hover:border-white',
         'accent': 'btn-accent',
         'info': 'btn-info',
-        'basic': ''
+        'basic': 'bg-white text-skyBlue border-0 border-white hover:bg-skyBlue hover:text-white hover:border-2 hover:border-white'
     }
 }
